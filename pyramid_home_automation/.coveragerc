@@ -1,0 +1,3 @@
+[run]
+source = pyramid_home_automation
+omit = pyramid_home_automation/test*

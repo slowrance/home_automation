@@ -1,0 +1,4 @@
+[
+  "pyramid_home_automation/tests.py::ViewTests::test_my_view",
+  "pyramid_home_automation/tests.py::FunctionalTests::test_root"
+]
