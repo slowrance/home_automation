@@ -9,7 +9,7 @@ def on_connect(client, userdata, flags, rc):
 def on_message(client, userdata, msg):
     print(msg.topic+" "+str(msg.payload))
 
-def send_msg(topic, msg):
+def send_msg(client, topic, msg):
     client.publish(topic, msg)
 
 
@@ -38,7 +38,7 @@ def send_message():
 
     topic = 'garden/water'
     msg = 'stop'
-    send_msg(topic, msg)
+    send_msg(client, topic, msg)
 
     client.loop_stop()
     client.disconnect()
